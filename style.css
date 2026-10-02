@@ -3116,3 +3116,343 @@ button {
     }
 
 }
+
+/* =====================================================
+   FINAL HERO LAYOUT FIX
+   LEFT CONTENT + RIGHT DASHBOARD
+===================================================== */
+
+.hero {
+    position: relative !important;
+
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) minmax(500px, 0.9fr) !important;
+
+    align-items: center !important;
+
+    gap: 50px !important;
+
+    min-height: calc(100vh - 80px) !important;
+
+    padding: 90px 5% 100px !important;
+
+    overflow: hidden !important;
+}
+
+
+/* LEFT SIDE */
+
+.hero-content {
+    position: relative !important;
+
+    z-index: 5 !important;
+
+    width: 100% !important;
+
+    max-width: 720px !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+}
+
+
+/* Badge */
+
+.hero-badge {
+    width: fit-content !important;
+
+    margin-bottom: 28px !important;
+}
+
+
+/* Heading */
+
+.hero h1 {
+    width: 100% !important;
+
+    max-width: 680px !important;
+
+    margin: 0 !important;
+
+    font-size: clamp(52px, 5.3vw, 78px) !important;
+
+    line-height: 0.98 !important;
+
+    letter-spacing: -3.5px !important;
+}
+
+
+/* Description */
+
+.hero-description {
+    max-width: 590px !important;
+
+    margin-top: 30px !important;
+
+    margin-bottom: 32px !important;
+}
+
+
+/* Buttons */
+
+.hero-actions {
+    position: relative !important;
+
+    z-index: 10 !important;
+}
+
+
+/* Trust */
+
+.hero-trust {
+    margin-top: 45px !important;
+}
+
+
+/* =====================================================
+   RIGHT SIDE DASHBOARD
+===================================================== */
+
+.hero-visual {
+    position: relative !important;
+
+    width: 100% !important;
+
+    max-width: 720px !important;
+
+    right: auto !important;
+
+    top: auto !important;
+
+    bottom: auto !important;
+
+    left: auto !important;
+
+    margin: 0 !important;
+
+    transform: none !important;
+
+    z-index: 2 !important;
+}
+
+
+.visual-glow {
+    width: 520px !important;
+
+    height: 520px !important;
+
+    right: 50% !important;
+
+    top: 50% !important;
+
+    transform: translate(50%, -50%) !important;
+}
+
+
+/* Dashboard */
+
+.dashboard-card {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    transform:
+        perspective(1200px)
+        rotateY(-5deg)
+        rotateX(2deg) !important;
+}
+
+
+/* Floating cards */
+
+.pill-one {
+    left: -45px !important;
+
+    top: 80px !important;
+}
+
+
+.pill-two {
+    right: -35px !important;
+
+    bottom: 55px !important;
+}
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1400px) {
+
+    .hero {
+        grid-template-columns:
+            minmax(600px, 1fr)
+            minmax(600px, 0.9fr) !important;
+
+        gap: 70px !important;
+
+        padding-left: 5% !important;
+
+        padding-right: 5% !important;
+    }
+
+    .hero h1 {
+        font-size: 82px !important;
+    }
+
+}
+
+
+/* =====================================================
+   LAPTOP
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .hero {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(430px, 0.9fr) !important;
+
+        gap: 30px !important;
+    }
+
+    .hero h1 {
+        font-size: 58px !important;
+
+        letter-spacing: -2.5px !important;
+    }
+
+    .hero-visual {
+        max-width: 620px !important;
+    }
+
+    .pill-one {
+        left: -20px !important;
+    }
+
+    .pill-two {
+        right: -20px !important;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .hero {
+        display: block !important;
+
+        min-height: auto !important;
+
+        padding:
+            80px 6% 80px !important;
+    }
+
+    .hero-content {
+        max-width: 720px !important;
+    }
+
+    .hero h1 {
+        max-width: 700px !important;
+
+        font-size:
+            clamp(52px, 9vw, 72px) !important;
+    }
+
+    .hero-visual {
+        width: 90% !important;
+
+        max-width: 700px !important;
+
+        margin:
+            80px auto 0 !important;
+    }
+
+    .dashboard-card {
+        transform: none !important;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding:
+            60px 20px 70px !important;
+    }
+
+    .hero-badge {
+        font-size: 9px !important;
+
+        letter-spacing: 0.8px !important;
+    }
+
+    .hero h1 {
+        font-size: 47px !important;
+
+        line-height: 1 !important;
+
+        letter-spacing: -2px !important;
+    }
+
+    .hero-description {
+        font-size: 15px !important;
+
+        line-height: 1.65 !important;
+    }
+
+    .hero-actions {
+        flex-direction: column !important;
+
+        width: 100% !important;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100% !important;
+    }
+
+    .hero-trust {
+        gap: 12px !important;
+
+        justify-content: space-between !important;
+    }
+
+    .hero-visual {
+        width: 100% !important;
+
+        margin-top: 65px !important;
+    }
+
+    .dashboard-card {
+        padding: 18px !important;
+
+        border-radius: 20px !important;
+    }
+
+    .pill-one {
+        left: -5px !important;
+
+        top: 65px !important;
+    }
+
+    .pill-two {
+        right: -5px !important;
+
+        bottom: 30px !important;
+    }
+
+}
