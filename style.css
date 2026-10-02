@@ -3018,3 +3018,101 @@ button {
     }
 
 }
+
+/* =====================================================
+   HERO POSITION FIX
+===================================================== */
+
+.hero {
+    justify-content: flex-start !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+/* Keep text safely on the left */
+
+.hero-content {
+    width: 48% !important;
+    max-width: 680px !important;
+    margin-left: 0 !important;
+    position: relative;
+    z-index: 10;
+}
+
+/* Make heading slightly smaller so it doesn't touch dashboard */
+
+.hero h1 {
+    max-width: 650px !important;
+    font-size: clamp(54px, 5.2vw, 78px) !important;
+    letter-spacing: -3.5px !important;
+}
+
+/* Keep dashboard clearly on the right */
+
+.hero-visual {
+    width: 46% !important;
+    max-width: 680px !important;
+    right: -3% !important;
+    z-index: 2 !important;
+}
+
+/* Don't allow dashboard to cover the text */
+
+.dashboard-card {
+    max-width: 100%;
+}
+
+/* Better spacing */
+
+.hero-description {
+    max-width: 570px !important;
+}
+
+/* Desktop spacing */
+
+@media (min-width: 1200px) {
+
+    .hero-content {
+        padding-left: 10px;
+    }
+
+    .hero-visual {
+        right: 1% !important;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+    .hero-content {
+        width: 52% !important;
+    }
+
+    .hero-visual {
+        width: 48% !important;
+        right: -8% !important;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 850px) {
+
+    .hero {
+        display: block !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 700px !important;
+    }
+
+    .hero-visual {
+        width: 100% !important;
+        right: auto !important;
+    }
+
+}
