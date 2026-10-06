@@ -5414,7 +5414,7 @@ button {
 .why-main-content {
     position: relative;
     z-index: 2;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .why-main-content h3 {
@@ -5647,7 +5647,7 @@ button {
     }
 
     .why-main-content {
-        margin-top: 110px;
+        margin-top: 40px;
     }
 
 }
