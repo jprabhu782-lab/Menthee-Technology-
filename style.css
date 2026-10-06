@@ -2002,7 +2002,7 @@ button {
 
     z-index: 2;
 
-    max-width: 560px;
+    max-width: 380px;
 
     margin-top: auto;
 
@@ -2021,7 +2021,7 @@ button {
 
     letter-spacing: -1.8px;
 
-    font-weight: 500;
+    font-weight: 300;
 
     margin: 0 0 22px;
 }
@@ -2369,7 +2369,7 @@ button {
 
     .why-main-card {
 
-        min-height: 430px;
+        min-height: 300px;
     }
 
 }
@@ -2402,7 +2402,7 @@ button {
 
     .why-main-card {
 
-        min-height: 430px;
+        min-height: 300px;
 
         padding: 25px;
 
@@ -5345,7 +5345,7 @@ button {
 
 .why-main-card {
     position: relative;
-    min-height: 380px;
+    min-height: 300px;
     padding: 38px;
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 26px;
@@ -5418,7 +5418,7 @@ button {
 }
 
 .why-main-content h3 {
-    max-width: 650px;
+    max-width: 300px;
     margin: 0 0 22px;
 
     font-size: clamp(30px, 3.2vw, 48px);
