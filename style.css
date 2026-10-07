@@ -8053,3 +8053,292 @@ button {
     }
 
 }
+
+/* =========================================================
+   MENTHEE — SINGLE VERTICAL HOMEPAGE LAYOUT
+   HOME → ABOUT → PRODUCTS → SERVICES → INDUSTRIES
+   → WHY MEN THEE → CONTACT
+   ========================================================= */
+
+/* ---------- GLOBAL ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+
+/* =========================================================
+   HOME / HERO
+   ========================================================= */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: block !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* IMPORTANT:
+   Remove the permanent left/right split */
+.hero-container,
+.hero-grid {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+    display: block !important;
+    grid-template-columns: none !important;
+    gap: 0 !important;
+    position: relative;
+}
+
+/* Hero content stays as the main content */
+.hero-content {
+    width: min(720px, 100%);
+    position: relative;
+    z-index: 5;
+}
+
+/* Right visual becomes a background-style visual,
+   NOT a second content column */
+.hero-visual {
+    position: absolute !important;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    width: 52%;
+    max-width: 700px;
+    height: 80%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Make visual blend into hero */
+.hero-visual::before {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(85, 168, 255, 0.13),
+            transparent 58%
+        );
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+/* No visible boundary between hero sides */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(
+            circle at 78% 48%,
+            rgba(45, 180, 210, 0.08),
+            transparent 32%
+        );
+    z-index: 0;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.stats-section {
+    width: 100%;
+    display: block !important;
+}
+
+.stats-grid {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.about-section {
+    width: 100%;
+    display: block !important;
+}
+
+.about-section .container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* About content can have internal columns,
+   but the SECTION itself remains full-width */
+.about-grid {
+    width: 100%;
+}
+
+
+/* =========================================================
+   PRODUCTS
+   ========================================================= */
+
+.products-section {
+    width: 100%;
+    display: block !important;
+}
+
+.products-container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services-section,
+#services {
+    width: 100%;
+    display: block !important;
+}
+
+.services-section > .container,
+#services > .container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   INDUSTRIES
+   ========================================================= */
+
+.industries-section,
+#industries {
+    width: 100%;
+    display: block !important;
+}
+
+.industries-section > .container,
+#industries > .container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   WHY MENTHEE
+   ========================================================= */
+
+.why-section,
+#why-menthee,
+#why {
+    width: 100%;
+    display: block !important;
+}
+
+.why-section > .container,
+#why-menthee > .container,
+#why > .container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-section,
+#contact {
+    width: 100%;
+    display: block !important;
+}
+
+.contact-section > .container,
+#contact > .container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   REMOVE UNWANTED SPLIT / COLUMN BACKGROUNDS
+   ========================================================= */
+
+.hero-container::before,
+.hero-container::after,
+.hero-grid::before,
+.hero-grid::after {
+    display: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: auto;
+        padding-bottom: 80px;
+    }
+
+    .hero-container,
+    .hero-grid {
+        width: min(100% - 32px, 700px);
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-visual {
+        position: relative !important;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 100%;
+        max-width: none;
+        height: 320px;
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-container,
+    .hero-grid,
+    .about-section .container,
+    .products-container,
+    .stats-grid,
+    .services-section > .container,
+    #services > .container,
+    .industries-section > .container,
+    #industries > .container,
+    .why-section > .container,
+    #why-menthee > .container,
+    #why > .container,
+    .contact-section > .container,
+    #contact > .container {
+        width: calc(100% - 32px);
+    }
+
+    .hero-visual {
+        height: 260px;
+        margin-top: 25px;
+    }
+}
