@@ -3742,3 +3742,231 @@ body {
     }
 
 }
+
+/* =========================================================
+   MENTHEE — TOP CTA BANNER
+========================================================= */
+
+.top-cta {
+    position: relative;
+
+    width: 100%;
+
+    padding: 18px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #c8f1f8 0%,
+            #b5eaf4 50%,
+            #c8f1f8 100%
+        );
+
+    border-top: 1px solid rgba(30, 150, 180, .15);
+    border-bottom: 1px solid rgba(30, 150, 180, .18);
+
+    overflow: hidden;
+}
+
+
+/* subtle violet stars */
+
+.top-cta::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            circle at 7% 45%,
+            rgba(55, 25, 115, .45) 0 1px,
+            transparent 2px
+        ),
+        radial-gradient(
+            circle at 21% 25%,
+            rgba(70, 30, 135, .35) 0 1px,
+            transparent 2px
+        ),
+        radial-gradient(
+            circle at 38% 70%,
+            rgba(55, 20, 115, .40) 0 1px,
+            transparent 2px
+        ),
+        radial-gradient(
+            circle at 61% 30%,
+            rgba(70, 25, 140, .35) 0 1px,
+            transparent 2px
+        ),
+        radial-gradient(
+            circle at 79% 65%,
+            rgba(60, 20, 125, .40) 0 1px,
+            transparent 2px
+        ),
+        radial-gradient(
+            circle at 94% 35%,
+            rgba(70, 25, 140, .35) 0 1px,
+            transparent 2px
+        );
+
+    opacity: .65;
+}
+
+
+/* container */
+
+.top-cta-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1240px, calc(100% - 80px));
+
+    max-width: 1240px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+}
+
+
+/* text */
+
+.top-cta-text {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 7px 12px;
+}
+
+
+.top-cta-text strong {
+    color: #12323a;
+
+    font-family: var(--font-heading);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.top-cta-text span {
+    color: #4f7179;
+
+    font-family: var(--font-body);
+
+    font-size: 13px;
+}
+
+
+/* button */
+
+.top-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    flex-shrink: 0;
+
+    min-height: 42px;
+
+    padding: 0 20px;
+
+    border-radius: 999px;
+
+    color: #ffffff;
+
+    background: #18aec8;
+
+    border: 1px solid rgba(18, 150, 175, .25);
+
+    font-family: var(--font-heading);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 22px rgba(20, 160, 185, .18);
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.top-cta-button span {
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+
+.top-cta-button:hover {
+    transform: translateY(-2px);
+
+    background: #109db7;
+
+    box-shadow:
+        0 11px 28px rgba(20, 160, 185, .26);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .top-cta {
+        padding: 16px 0;
+    }
+
+    .top-cta-container {
+        width: calc(100% - 40px);
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 14px;
+    }
+
+    .top-cta-text {
+        display: block;
+    }
+
+    .top-cta-text strong,
+    .top-cta-text span {
+        display: block;
+    }
+
+    .top-cta-text span {
+        margin-top: 4px;
+    }
+
+    .top-cta-button {
+        width: 100%;
+    }
+
+}
