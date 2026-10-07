@@ -1907,3 +1907,595 @@ body {
 .product-main p + p {
     margin-top: 10px;
 }
+
+/* =========================================================
+   MENTHEE — WHITE TO SKY BLUE THEME
+   COLOR / BACKGROUND REDESIGN
+========================================================= */
+
+:root {
+    --bg: #ffffff;
+    --bg-soft: #f3fbff;
+    --panel: #ffffff;
+    --panel-light: #eefaff;
+
+    --text: #102027;
+    --muted: #60747c;
+    --line: rgba(30, 130, 160, 0.14);
+
+    --accent: #35b9d3;
+    --accent-soft: rgba(53,185,211,.10);
+
+    --max: 1240px;
+
+    --font-heading: "Space Grotesk", sans-serif;
+    --font-body: "DM Sans", sans-serif;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+html {
+    background: #ffffff;
+}
+
+body {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fafdff 18%,
+            #f3fbff 42%,
+            #e8f8fd 68%,
+            #d9f3fa 100%
+        );
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.site-header {
+    background: rgba(255,255,255,.88);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(30,130,160,.10);
+}
+
+.brand-name {
+    color: #14252b;
+}
+
+.brand-name span {
+    color: #28b8d2;
+}
+
+.brand-mark {
+    border-color: #28b8d2;
+    color: #28b8d2;
+    background: rgba(255,255,255,.8);
+}
+
+.desktop-nav a {
+    color: #53676f;
+}
+
+.desktop-nav a:hover {
+    color: #15282f;
+}
+
+.desktop-nav .nav-contact {
+    color: #159fba;
+    border-color: rgba(40,184,210,.45);
+    background: rgba(40,184,210,.04);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+.menu-btn {
+    background: rgba(255,255,255,.8);
+    border-color: rgba(30,130,160,.18);
+}
+
+.menu-btn span {
+    background: #18323a;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    background:
+        radial-gradient(
+            circle at 82% 45%,
+            rgba(53,185,211,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fdff 55%,
+            #edfaff 100%
+        );
+
+    border-bottom: 1px solid rgba(30,130,160,.12);
+}
+
+.hero h1 {
+    color: #102027;
+}
+
+.hero h1 strong {
+    color: #28b8d2;
+}
+
+.hero-copy > p {
+    color: #60747c;
+}
+
+
+/* HERO BUTTON */
+
+.button-primary {
+    background: #35b9d3;
+    color: #ffffff;
+}
+
+.button-primary:hover {
+    box-shadow: 0 12px 35px rgba(53,185,211,.25);
+}
+
+.button-outline {
+    color: #17323a;
+    border-color: rgba(30,130,160,.20);
+    background: rgba(255,255,255,.55);
+}
+
+.button-outline:hover {
+    border-color: #35b9d3;
+    color: #159fba;
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-art {
+    opacity: .55;
+}
+
+.art-ring {
+    border-color: rgba(40,184,210,.20);
+}
+
+.ring-two {
+    border-color: rgba(40,184,210,.14);
+}
+
+.ring-three {
+    border-color: rgba(40,184,210,.09);
+}
+
+.art-core {
+    background:
+        radial-gradient(
+            circle,
+            rgba(53,185,211,.20),
+            rgba(53,185,211,.05) 60%,
+            transparent 70%
+        );
+
+    border-color: rgba(40,184,210,.35);
+
+    box-shadow:
+        0 0 70px rgba(53,185,211,.14),
+        inset 0 0 50px rgba(53,185,211,.06);
+}
+
+.core-inner {
+    border-color: rgba(40,184,210,.40);
+}
+
+.core-inner span {
+    color: #28b8d2;
+}
+
+.art-node {
+    background: #35b9d3;
+    box-shadow: 0 0 20px rgba(53,185,211,.45);
+}
+
+.art-line {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(40,184,210,.40),
+        transparent
+    );
+}
+
+
+/* =========================================================
+   HERO BOTTOM
+========================================================= */
+
+.hero-bottom {
+    background: rgba(255,255,255,.42);
+    border-top-color: rgba(30,130,160,.10);
+    color: #64818a;
+}
+
+
+/* =========================================================
+   ALL SECTIONS
+========================================================= */
+
+.section-top {
+    border-bottom-color: rgba(30,130,160,.13);
+}
+
+.section-number,
+.section-label {
+    color: #1eabc5;
+}
+
+.section-top h2 {
+    color: #12262d;
+}
+
+.section-top h2 em {
+    color: #28b8d2;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background:
+        linear-gradient(
+            180deg,
+            #f3fbff 0%,
+            #eefaff 100%
+        );
+}
+
+.about-large p {
+    color: #14272e;
+}
+
+.about-text p {
+    color: #60747c;
+}
+
+.text-link {
+    color: #159fba;
+}
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+.products {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f6fcff 100%
+        );
+}
+
+.product-row {
+    border-bottom-color: rgba(30,130,160,.13);
+}
+
+.product-row:hover {
+    border-color: rgba(40,184,210,.40);
+    background: rgba(53,185,211,.025);
+}
+
+.product-index {
+    color: #789099;
+}
+
+.product-type {
+    color: #1eabc5;
+}
+
+.product-main h3 {
+    color: #13272e;
+}
+
+.product-main p {
+    color: #60747c;
+}
+
+.product-tags span {
+    border-color: rgba(30,130,160,.16);
+    color: #60747c;
+    background: rgba(255,255,255,.55);
+}
+
+.product-arrow {
+    border-color: rgba(30,130,160,.18);
+    color: #1eabc5;
+}
+
+.product-row:hover .product-arrow {
+    background: #35b9d3;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services {
+    background:
+        linear-gradient(
+            180deg,
+            #eefaff 0%,
+            #e5f7fc 100%
+        );
+}
+
+.service-grid {
+    border-color: rgba(30,130,160,.14);
+}
+
+.service-box {
+    background: rgba(255,255,255,.48);
+    border-color: rgba(30,130,160,.14);
+}
+
+.service-box:hover {
+    background: rgba(255,255,255,.85);
+}
+
+.service-box > span {
+    color: #1eabc5;
+}
+
+.service-box h3 {
+    color: #14282f;
+}
+
+.service-box p {
+    color: #60747c;
+}
+
+.service-points span {
+    border-color: rgba(30,130,160,.15);
+    color: #60747c;
+    background: rgba(255,255,255,.60);
+}
+
+
+/* =========================================================
+   INDUSTRIES
+========================================================= */
+
+.industries {
+    background:
+        linear-gradient(
+            180deg,
+            #e5f7fc 0%,
+            #dff5fb 100%
+        );
+}
+
+.industry-strip {
+    border-top-color: rgba(30,130,160,.14);
+}
+
+.industry-item {
+    border-bottom-color: rgba(30,130,160,.14);
+}
+
+.industry-item:hover {
+    background: rgba(255,255,255,.35);
+}
+
+.industry-item span {
+    color: #1eabc5;
+}
+
+.industry-item h3 {
+    color: #14282f;
+}
+
+.industry-item p {
+    color: #60747c;
+}
+
+
+/* =========================================================
+   WHY MENTHEE
+========================================================= */
+
+.why {
+    background:
+        linear-gradient(
+            180deg,
+            #dff5fb 0%,
+            #d7f2f9 100%
+        );
+}
+
+.why-grid {
+    border-color: rgba(30,130,160,.14);
+}
+
+.why-item {
+    background: rgba(255,255,255,.38);
+    border-color: rgba(30,130,160,.14);
+}
+
+.why-item:hover {
+    background: rgba(255,255,255,.70);
+}
+
+.why-item > span {
+    color: #1eabc5;
+}
+
+.why-item h3 {
+    color: #14282f;
+}
+
+.why-item p {
+    color: #60747c;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(53,185,211,.16),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            #d7f2f9 0%,
+            #cceef7 100%
+        );
+}
+
+.contact-copy h2 {
+    color: #10272f;
+}
+
+.contact-copy h2 em {
+    color: #1eabc5;
+}
+
+.contact-copy p {
+    color: #60747c;
+}
+
+.contact-link {
+    color: #14282f;
+    border-bottom-color: rgba(30,130,160,.15);
+}
+
+.contact-link strong {
+    color: #1eabc5;
+}
+
+.website-link {
+    color: #159fba;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: #c8edf6;
+    border-top-color: rgba(30,130,160,.15);
+}
+
+.footer-container {
+    background: transparent;
+}
+
+.footer-bottom {
+    border-top-color: rgba(30,130,160,.14);
+}
+
+.footer-bottom span {
+    color: #60747c;
+}
+
+.footer-bottom a {
+    color: #159fba;
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+    background: #35b9d3;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        background:
+            radial-gradient(
+                circle at 80% 35%,
+                rgba(53,185,211,.14),
+                transparent 35%
+            ),
+            linear-gradient(
+                180deg,
+                #ffffff 0%,
+                #eefaff 100%
+            );
+    }
+
+    .hero-art {
+        opacity: .25;
+    }
+
+    .hero-bottom {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        background:
+            linear-gradient(
+                180deg,
+                #ffffff 0%,
+                #eaf9fd 100%
+            );
+    }
+
+    .hero-art {
+        opacity: .16;
+    }
+
+    .hero h1 {
+        color: #102027;
+    }
+
+    .section-top h2 {
+        color: #102027;
+    }
+
+    .footer {
+        background: #c8edf6;
+    }
+}
