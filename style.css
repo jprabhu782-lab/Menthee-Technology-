@@ -1876,3 +1876,34 @@ body {
         gap: 15px;
     }
 }
+
+.service-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.service-points span {
+    padding: 7px 11px;
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    color: #9ca8a9;
+    font-size: 10px;
+}
+
+.industry-item > div {
+    flex: 1;
+}
+
+.industry-item p {
+    margin-top: 10px;
+    max-width: 700px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.product-main p + p {
+    margin-top: 10px;
+}
