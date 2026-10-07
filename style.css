@@ -3970,3 +3970,113 @@ body {
     }
 
 }
+
+/* =====================================================
+   TOP CTA — BOOK A DEMO / TRIAL
+===================================================== */
+
+.top-cta {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 20;
+    background: linear-gradient(90deg, #d9f8fc 0%, #b9edf5 50%, #d9f8fc 100%);
+    border-bottom: 1px solid rgba(80, 70, 150, 0.15);
+    padding: 18px 30px;
+    box-sizing: border-box;
+}
+
+.top-cta-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.top-cta-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #21183f;
+    font-family: "DM Sans", sans-serif;
+}
+
+.top-cta-text strong {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.top-cta-text span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-cta-button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    padding: 12px 22px;
+    border-radius: 999px;
+
+    background: #21183f;
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.top-cta-button span {
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.top-cta-button:hover {
+    transform: translateY(-2px);
+    background: #30215d;
+    box-shadow: 0 8px 22px rgba(33, 24, 63, 0.20);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .top-cta {
+        padding: 16px 20px;
+    }
+
+    .top-cta-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+
+    .top-cta-text {
+        justify-content: center;
+    }
+
+    .top-cta-text strong {
+        font-size: 15px;
+    }
+
+    .top-cta-text span {
+        font-size: 14px;
+    }
+
+    .top-cta-button {
+        width: auto;
+        min-width: 190px;
+    }
+
+}
