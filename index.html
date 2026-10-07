@@ -1378,5 +1378,50 @@ document.querySelectorAll(".mobile-nav a").forEach(link => {
 
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const contactForm = document.getElementById("contact-form");
+
+    if (!contactForm) return;
+
+    contactForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("contact-name").value.trim();
+        const email = document.getElementById("contact-email").value.trim();
+        const phone = document.getElementById("contact-phone").value.trim();
+        const product = document.getElementById("contact-product").value;
+        const message = document.getElementById("contact-message").value.trim();
+
+        if (!name || !email || !product) {
+            alert("Please fill in Name, Email ID and Product.");
+            return;
+        }
+
+        const subject =
+            "MenThee Website Enquiry - " + product;
+
+        const body =
+            "Name: " + name + "\n\n" +
+            "Email ID: " + email + "\n\n" +
+            "Mobile Number: " + (phone || "Not provided") + "\n\n" +
+            "Product / Service: " + product + "\n\n" +
+            "Requirement:\n" +
+            (message || "Not provided");
+
+        const mailto =
+            "mailto:contact@menthee.com" +
+            "?subject=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent(body);
+
+        window.location.href = mailto;
+
+    });
+
+});
+</script>
+    
 </body>
 </html>
